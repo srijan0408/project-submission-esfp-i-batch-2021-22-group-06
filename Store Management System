@@ -22,6 +22,7 @@ int k=0;
 
 float t_price = 0;
 
+// This Function Is To Add Goods To File 
 void add() {
 	fp = fopen("goods.txt", "a");
 
@@ -40,6 +41,7 @@ void add() {
 	fclose(fp);
 }
 
+// This Function Is To Display Goods 
 void display() {
 	char c;
 	float t_price = 0;
@@ -54,6 +56,7 @@ void display() {
 	fclose(fp);
 }
 
+//This Function Is To Update Goods In File 
 void update(int u_id, int choice) {
 	fp = fopen("goods.txt", "w");
 	fclose(fp);
@@ -125,6 +128,7 @@ void update(int u_id, int choice) {
 	fclose(fp);
 }
 
+// This Function Is To Search Goods In File 
 void search(int n) {
 	fp = fopen("goods.txt", "r");
 
@@ -202,6 +206,8 @@ void search(int n) {
 	fclose(fp);
 }
 
+
+// This Function Is To Delete Goods In File 
 void delete(int n) {
 	fp = fopen("goods.txt", "w");
 	fclose(fp);
